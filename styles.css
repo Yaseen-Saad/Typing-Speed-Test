@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+body main {
+  height: 100%;
+}
+body main p {
+  height: 20%;
+  margin: 0 0 30px 0;
+  font-size: 12vw;
+  color: #52e185;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section {
+  max-width: 1200px;
+  margin-inline: auto;
+  max-height: 1200px;
+  min-width: 50%;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  height: 80%;
+}
+body main section article {
+  background-color: #52e185;
+  font-size: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.shake {
+  animation: shake 1s ease-in-out alternate-reverse;
+  background-color: #f33131;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(7px);
+  }
+  40% {
+    transform: translateX(-7px);
+  }
+  60% {
+    transform: translateX(7px);
+  }
+  80% {
+    transform: translateX(-7px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}/*# sourceMappingURL=styles.css.map */
